@@ -1,0 +1,99 @@
+web2
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time Table</title>
+<style>
+table{
+    border-collapse:collapse;
+    width:80%;
+    margin:auto;
+    text-align:center
+}
+th,td{
+    border:1px solid;
+    padding:5px
+}
+.lab{
+    background:orange;
+}
+.elec{
+    background:green;
+}
+tr:nth-child(even){
+    background:pink;
+}
+tfoot{
+    background:grey;
+    font-weight:bold
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center">Time Table</h1>
+<table>
+<thead>
+    <tr>
+        <th>Day/Time</th>
+        <th>9-10</th>
+        <th>10-11</th>
+        <th>11-12</th>
+        <th>12-1</th>
+        <th>Lunch</th>
+        <th>2-3</th>
+        <th>3-4</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>Mon</td>
+    <td>AI</td>
+    <td>USP</td>
+    <td class="lab">Placement</td>
+    <td>Elective</td>
+    <td rowspan=5>Break</td>
+    <td class="lab" colspan=2>Skill Lab</td>
+</tr>
+<tr>
+    <td>Tue</td>
+    <td class="elec">Elective</td>
+    <td>CN</td>
+    <td>ATC</td>
+    <td class="lab">Skill Lab</td>
+    <td class="lab" colspan=2>WL Lab</td>
+</tr>
+<tr>
+    <td>Wed</td>
+    <td class="lab" colspan=2>CN Lab</td>
+    <td>ATC</td>
+    <td>CN</td>
+    <td>AI</td>
+    <td class="elec">Elective</td>
+</tr>
+<tr>
+    <td>Thu</td>
+    <td>CN</td>
+    <td>ATC</td>
+    <td>CN</td>
+    <td class="elec">Elective</td>
+    <td>USP</td>
+    <td>AI</td>
+</tr>
+<tr>
+    <td>Fri</td>
+    <td>CN</td>
+    <td>AI</td>
+    <td>USP</td>
+    <td>ATC</td>
+    <td class="elec">Elective</td>
+    <td>RM</td>
+</tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan=8>End of Timetable</td>
+    </tr>
+</tfoot>
+</table>
+</body>
+</html>
